@@ -2,7 +2,7 @@
 Simple cloudflare worker function that schedule to check online dc users and pings me to the channel
 
 # Prerequisite
-Cloudflare Account
+Cloudflare Account\
 Discord Bot
 
 # References
