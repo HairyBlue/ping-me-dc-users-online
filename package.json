@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "deploy": "npm run copy-env && wrangler deploy",
+    "dev": "npm run copy-env-dev && wrangler dev",
     "build": "npm run generate-types && tsc",
     "generate-types": "wrangler types",
-    "type-check": "generate-types && tsc"
+    "type-check": "generate-types && tsc",
+    "copy-env": "echo Copying .env before deploy && bash ./inject-env.sh --production",
+    "copy-env-dev": "echo Copying .env.development before deploy && bash ./inject-env.sh --development"
   },
   "keywords": [],
   "author": "Hairyblue",

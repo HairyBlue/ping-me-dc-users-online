@@ -8,6 +8,7 @@ dist/
 # Local environment
 .env
 .env.*  # Optional: to ignore .env.development, .env.production, etc.
+.env.development
 
 # Wrangler-specific temporary files
 .wrangler/tmp/

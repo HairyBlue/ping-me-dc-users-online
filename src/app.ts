@@ -2,7 +2,7 @@ let count = 0;
 
 export default {  
    async fetch(request: Request): Promise<Response> {
-      return new Response("OK");
+      return new Response("Don't tell him 人´∀｀) hehehe");
    },
 
    async scheduled(
