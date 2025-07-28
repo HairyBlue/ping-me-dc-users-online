@@ -1,0 +1,23 @@
+{
+  "name": "ping-me-dc-users-online",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "build": "npm run generate-types && tsc",
+    "generate-types": "wrangler types",
+    "type-check": "generate-types && tsc"
+  },
+  "keywords": [],
+  "author": "Hairyblue",
+  "license": "ISC",
+  "description": "To see if he's online, ping me.",
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "wrangler": "^4.26.0"
+  },
+  "dependencies": {
+    "@types/node": "^24.1.0"
+  }
+}

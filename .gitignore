@@ -1,0 +1,33 @@
+# Node dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+*.tsbuildinfo
+
+# Local environment
+.env
+.env.*  # Optional: to ignore .env.development, .env.production, etc.
+
+# Wrangler-specific temporary files
+.wrangler/tmp/
+.wrangler/state/
+.wrangler/.wrangler/
+.wrangler/*.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / IDE / editor artifacts
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+.wrangler
+.dev.vars*
+
+worker-configuration.d.ts
