@@ -32,3 +32,4 @@ yarn-error.log*
 .dev.vars*
 
 worker-configuration.d.ts
+wrangler.toml
